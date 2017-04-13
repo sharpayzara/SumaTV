@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddm.live.activities.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/search_activity_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/search_cancle_btn"
+            android:background="@drawable/search_edit_box"
+            android:drawableLeft="@mipmap/search_small"
+            android:drawablePadding="6dp"
+            android:hint="@string/search_acitivity_hint"
+            android:inputType="text"
+            android:paddingLeft="6dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/texthint"
+            android:textSize="13.4sp" />
+
+        <ImageView
+            android:id="@+id/search_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:src="@mipmap/search_delete" />
+
+        <TextView
+            android:id="@+id/search_cancle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/search_ativity_cancel"
+            android:textColor="@color/le_font_black"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/search_divide_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_activity_title"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/search_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/search_big" />
+
+        <ListView
+            android:id="@+id/search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:divider="@color/le_fans_list_gray"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+    <com.ddm.live.ui.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:loadingText="加载中..." />
+</RelativeLayout>

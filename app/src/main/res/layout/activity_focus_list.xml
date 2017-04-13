@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddm.live.activities.FocusListActivity">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorName="BallBeatIndicator" />
+
+    <com.ddm.live.ui.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:loadingText="加载中..." />
+
+    <RelativeLayout
+        android:id="@+id/user_focus_list_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/user_focus_list_title_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/home_page_user_img"
+            android:scaleType="center"
+            android:src="@mipmap/xz_back_black" />
+
+        <TextView
+            android:id="@+id/user_focus_list_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/user_focus_list_title_text"
+            android:textColor="@color/xz_font_black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:src="@color/xz_line_gray" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_focus_list_explain_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_focus_list_title_layout"
+        android:background="@color/le_user_fans_list_background"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="3dp"
+        android:text="@string/user_focus_list_explain_text"
+        android:textColor="@color/font_gray_light"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/user_focus_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_focus_list_explain_text"
+        android:divider="@color/le_fans_list_gray"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@color/white"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/user_focus_list_no_data_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/focus_list_no_data_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/le_no_data_description"
+            android:src="@mipmap/list_nodata_emptybox" />
+
+        <TextView
+            android:id="@+id/focus_list_no_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/le_no_data_text"
+            android:textColor="@color/le_font_gray" />
+    </LinearLayout>
+
+</RelativeLayout>

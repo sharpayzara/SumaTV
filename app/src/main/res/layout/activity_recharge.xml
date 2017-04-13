@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorName="BallBeatIndicator" />
+
+    <RelativeLayout
+        android:id="@+id/recharge_num_list_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/font_white_light">
+
+        <ImageView
+            android:id="@+id/recharge_num_list_title_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/home_page_user_img"
+            android:scaleType="center"
+            android:src="@mipmap/xz_back_black" />
+
+        <TextView
+            android:id="@+id/recharge_num_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="购买钻石"
+            android:textColor="@color/xz_font_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/recharge_num_list_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="购买记录"
+            android:textColor="@color/xz_font_purple"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.7"
+            android:src="@color/xz_line_gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recharge_diamonds_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/theme_txt"
+                android:textSize="30sp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/xz_recharge_diamond_title_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/user_center_diamond_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/xz_recharge_diamond_title_img"
+                    android:text="账户余额"
+                    android:textColor="@color/xz_font_gray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+<!--
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:src="@color/xz_line_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/xz_recharge_star_title_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:src="@mipmap/xz_starshine_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/xz_recharge_star_title_img"
+                    android:text="收到星光"
+                    android:textColor="@color/xz_font_gray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/recharge_lebi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/message_background_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:src="@color/xz_line_gray" />
+
+    <com.marshalchen.ultimaterecyclerview.UltimateRecyclerView
+        android:id="@+id/recharge_num_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-60dp"
+        app:recyclerviewClipToPadding="true"
+        app:recyclerviewEmptyView="@layout/empty_view"
+        app:recyclerviewScrollbars="vertical">
+
+    </com.marshalchen.ultimaterecyclerview.UltimateRecyclerView>
+
+</LinearLayout>

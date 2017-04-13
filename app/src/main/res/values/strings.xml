@@ -1,0 +1,250 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="app_name">My Application</string>-->
+    <!--<string name="action_settings">Settings</string>-->
+
+    <!--menu文字-->
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <string name="xiaozhu_share_pre_title">主播正在直播</string>
+    <string name="xiaozhu_share_after_title">，快来一起看吧</string>
+    <string name="app_name">小主直播</string>
+    <string name="bf_live_over_text">直播已经结束</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcom_description">欢迎页图片</string>
+    <string name="action_settings">Settings</string>
+    <string name="report">举报</string>
+    <string name="manage">管理</string>
+    <string name="list_title">直播列表</string>
+    <string name="button_watch">观看</string>
+    <string name="button_video">录像</string>
+    <string name="tab_weather_report_title">天气预报</string>
+    <string name="tab_cute_pet_title">趣味萌宠</string>
+    <string name="tab_socil_new_title">社会新闻</string>
+    <string name="home_page_title">精选</string>
+    <string name="home_page_user_img">用户中心图片</string>
+    <string name="home_page_search_img">搜索图片</string>
+    <string name="home_page_video_on_img">播放图标</string>
+    <string name="hot_img">热门推荐图片</string>
+    <string name="hot_text">热门推荐</string>
+    <string name="hot_video_img">热门视频图片</string>
+    <string name="hot_video_text">热门视频</string>
+    <string name="home_ad_text">首页广告</string>
+    <string name="ledao_loading_icon">加载中图片</string>
+
+    <!--登录页-->
+    <string name="blue_app_name">应用名称</string>
+    <string name="butter_login_wechat_des">微信登录图片</string>
+    <string name="butter_login_qq_des">QQ登录图片</string>
+    <string name="butter_login_btn_des">登录</string>
+    <string name="butter_wechat_login_btn_des">微信登录</string>
+    <string name="butter_phonenum_login_btn_des">手机号登录</string>
+
+    <!-- 直播列表相关 -->
+    <string name="bottom_gkzb">观看直播</string>
+    <string name="bottom_wlzb">我来直播</string>
+    <string name="bottom_grzx">个人中心</string>
+    <string name="audience_num_txt">人在看</string>
+    <string name="my_live_audience_num_txt">人看过</string>
+    <string name="stream_status_living">正在直播</string>
+    <string name="stream_status_record">观看录像</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <!-- 播放页 -->
+    <string name="bf_content">播放页</string>
+    <string name="bf_saysomething">说点什么呢~</string>
+    <string name="bf_num">152</string>
+    <string name="bf_user_name">风华正茂</string>
+    <string name="bf_user_word">QAAAA大赞QA</string>
+    <string name="bf_user_head_img">登录用户头像</string>
+    <string name="bf_people_text">人</string>
+    <string name="bf_close_btn_text">关闭</string>
+    <string name="bf_focus_on_btn_text">关注</string>
+    <string name="bf_focus_off_btn_text">已关注</string>
+    <string name="bf_report_text">举报</string>
+    <string name="bf_report_on_text">已举报</string>
+
+    <string name="back_title">返回</string>
+    <string name="buffering">Buffering</string>
+
+    <!-- 准备直播 -->
+    <string name="pre_content">准备播放页</string>
+    <string name="pre_title">我来直播</string>
+    <string name="pre_explain">登录</string>
+    <string name="search_acitivity_hint">输入昵称或小主号</string>
+    <string name="pre_hint_phoneNum">请输入手机号</string>
+    <string name="pre_hint_captcha">请输入验证码</string>
+    <string name="pre_hint_pwm">请输入密码</string>
+    <string name="pre_hint_regist_pwm">设置密码</string>
+    <string name="pre_hint_resetpwm">请输入新密码</string>
+    <string name="pre_hint_tips">下次可以直接通过手机号和新密码登录</string>
+    <string name="pre_log_word">登录</string>
+    <string name="pre_logs_way">您还可以使用其他登录方式</string>
+    <string name="pre_ready_live">准备直播</string>
+    <string name="pre_weather">多云，北风一到二级，空气良好</string>
+    <string name="pre_location">北京市海淀区上地东路1号</string>
+    <string name="pre_editor_title">请输入直播主题</string>
+    <string name="bf_pre_close_btn">返回</string>
+    <string name="bf_pre_camare_btn">摄像头切换</string>
+    <string name="bf_pre_live_title_edit_text">给直播写个标题吧</string>
+    <string name="bf_pre_location_img_text">位置图片</string>
+    <string name="bf_qqzone_login_btn_text">qq空间登录</string>
+    <string name="bf_wechat_login_btn_text">微信登录</string>
+    <string name="bf_qq_login_btn_text">qq登录</string>
+    <string name="bf_weibo_login_btn_text">微博登录</string>
+    <string name="bf_pre_live_btn_text">开始直播</string>
+    <string name="bf_live_en_btn_text">确定</string>
+    <string name="bf_live_return">返回首页</string>
+    <string name="bf_live_delete">删除视频</string>
+    <string name="bf_pre_location_default_text">外太空</string>
+
+    <!-- 录像相关 -->
+    <string name="lz_weather">多云，北风一到二级，空气良好</string>
+    <string name="lz_location">北京市海淀区上地东路1号</string>
+    <string name="lz_start">开始录制</string>
+    <string name="lz_save">停止录制</string>
+    <string name="string_state_ready">已准备</string>
+    <string name="string_state_preparing">PREPARING</string>
+    <string name="string_state_connecting">CONNECTING</string>
+    <string name="string_state_streaming">正在录制</string>
+    <string name="string_state_netblocking">NETBLOCKING, STOPPING</string>
+    <string name="string_state_con_timeout">CONNECTION TIMEOUT</string>
+    <string name="title_activity_audio_streaming">AudioStreamingActivity</string>
+    <string name="string_state_camera">切换摄像头</string>
+
+    <string name="flash_light_on">开</string>
+    <string name="flash_light_off">关</string>
+
+    <!--直播结束页-->
+    <string name="live_over_bg_text">直播结束页背景</string>
+    <string name="live_over_user_img_text">用户头像</string>
+    <string name="live_over_line_text">分割线</string>
+    <string name="live_over_word_text">直播结束</string>
+    <string name="live_over_total_text">观看人数</string>
+    <string name="contribution_total_text">获得星光数</string>
+    <string name="live_duration_text">直播时长</string>
+    <string name="live_over_like_text">  喜欢  </string>
+    <string name="live_over_new_fans_text">新增粉丝数</string>
+    <string name="live_over_new_intimacy_text">新增亲密度</string>
+    <string name="live_over_new_m_text"> 新增M豆  </string>
+    <string name="live_over_share_text">分享给朋友们吧</string>
+    <string name="my_live_share">分享</string>
+    <string name="live_over_back_btn">确定</string>
+
+    <!-- 用户中心 -->
+    <string name="user_content">个人中心</string>
+    <string name="user_home_page_title">主页</string>
+    <string name="user_home_user_id_text">小主号：</string>
+    <string name="xiaozhu_id_text">小主号：</string>
+    <string name="user_home_video_living_text">直播</string>
+    <string name="user_home_video_record_text">回看</string>
+    <string name="user_name">用户名</string>
+    <string name="user_unlogin_name">未登录</string>
+    <string name="user_introduction">这家伙很懒,什么都没写</string>
+    <string name="user_setting">通用设置</string>
+    <string name="user_disturb">免打扰</string>
+    <string name="user_remind">接收提醒</string>
+    <string name="user_cache">清理缓存</string>
+    <string name="user_info_change_title">修改信息</string>
+    <string name="user_info">个人资料</string>
+    <string name="buy_lebi">购买钻石</string>
+    <string name="grade">等级</string>
+    <string name="help">帮助与反馈</string>
+    <string name="setting">设置</string>
+    <string name="certify">实名认证</string>
+    <string name="user_message">消息</string>
+    <string name="user_change_password">修改密码</string>
+    <string name="user_video_manage">我的直播</string>
+    <string name="user_center_list_fans_contribution">星光贡献榜</string>
+    <string name="user_center_mystar">我的星光</string>
+    <string name="user_clear_cache">清除缓存</string>
+    <string name="user_help">帮助</string>
+    <string name="user_suggest">意见反馈</string>
+    <string name="user_about_us">关于我们</string>
+    <string name="user_login_out">退出登录</string>
+    <string name="user_on_btn">开</string>
+    <string name="user_off_btn">关</string>
+    <string name="user_video_num">100</string>
+    <string name="user_point_num">200</string>
+    <string name="bf_user_back_txt">用户中心返回</string>
+    <string name="bf_user_setting_txt">用户中心设置</string>
+    <string name="bf_user_img_txt">用户中心头像</string>
+    <string name="bf_user_id_text">ID账号:</string>
+    <string name="blue_user_fans_text">粉丝</string>
+    <string name="blue_user_focus_text">关注</string>
+    <string name="blue_user_person_text">人</string>
+    <string name="weixin_share">微信</string>
+    <string name="friends_share">朋友圈</string>
+    <string name="qq_share">QQ</string>
+    <string name="qzones_share">QQ空间</string>
+    <string name="sina_share">微博</string>
+
+    <string name="user_fans_list_title_text">粉丝列表</string>
+    <string name="user_focus_list_title_text">关注列表</string>
+    <string name="user_fans_list_explain_text">全部粉丝</string>
+    <string name="user_focus_list_explain_text">全部关注</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_blue_user_video_manage">BlueUserVideoManage</string>
+    <string name="le_user_home_pop_cancel_text">取消</string>
+    <string name="le_user_home_pop_delete_text">删除</string>
+    <string name="le_no_data_description">无列表信息图标</string>
+    <string name="le_no_data_text">暂无内容</string>
+    <string name="search_ativity_cancel">取消</string>
+
+    <!--视频管理页-->
+    <string name="blue_video_manage_title">我的直播</string>
+
+    <!-- 七牛上传-->
+    <string name="internal_storage">内部存储</string>
+    <string name="title_activity_login_by_phone_num">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_phone">Phone number</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_login_by_mm">Sign in</string>
+    <string name="title_activity_login_by_pwm">Sign in</string>
+    <string name="title_return">返回</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="umeng_sharebutton_custom">自定义分享按钮</string>
+
+    <item name="viewHolderSystemType" type="id" />
+    <item name="viewHolderNormalType" type="id" />
+    <item name="viewHolderFocusType" type="id" />
+    <item name="viewHolderJoinType" type="id" />
+    <item name="viewHolderQuitType" type="id" />
+    <item name="viewHolderLightType" type="id" />
+    <item name="viewHolderGiftType" type="id" />
+    <item name="viewHolderFansContributionTopThree" type="id"/>
+    <item name="viewHolderFansContributionNormal" type="id"/>
+
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="gag">禁言</string>
+    <string name="cancel_gag">取消禁言</string>
+    <string name="gag_list">禁言列表</string>
+    <string name="cancel">取消</string>
+</resources>

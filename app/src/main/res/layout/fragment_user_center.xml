@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue_light"
+    tools:context="com.ddm.live.activities.UserCenterFragment">
+    <!--android:paddingBottom="50dp"-->
+
+    <FrameLayout
+        android:id="@+id/user_center_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

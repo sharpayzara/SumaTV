@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_user_center" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="33.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="130dp" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_center_user_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/user1"
+            android:contentDescription="@string/user_content"
+            app:civ_border_color="#ffdf54" />
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/level_bg"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="LV.3"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/theme_txt"
+        android:textSize="17sp"
+        android:text="距离LV.4还差516经验"/>
+
+    <ProgressBar
+        android:id="@+id/pb_progressbar"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:max="100"
+        android:padding="3dp"
+        android:background="@drawable/shap_grade_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_txt"
+            android:textSize="17sp"
+            android:text="等级规则"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:text="1. 打赏主播(1钻石获得10经验值),可以最快地积累经验值！"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="14sp"
+            android:text="2. 收到打赏越多(1钻石获得5经验值),积累经验值越多！"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:text="3. 发起直播时间越长(1分钟获得2经验值),经验值越多！"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="14dp"
+            android:layout_height="wrap_content"
+            android:text="4. 观看直播时间越长(1分钟获得1经验值),经验值越多！"/>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

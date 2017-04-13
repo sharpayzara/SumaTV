@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddm.live.activities.UserCenterHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/user_center_home_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/user_center_home_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/bf_user_back_txt"
+            android:src="@mipmap/bf_user_back" />
+
+        <ImageView
+            android:id="@+id/user_center_home_setting_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/bf_user_setting_txt"
+            android:src="@mipmap/bf_user_setting" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_center_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/user_img_bg"
+        android:contentDescription="@string/bf_user_img_txt"
+        app:civ_border_color="#9c9c9c"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/user_center_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_center_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_center_id_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_center_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/bf_user_id_text"
+        android:textColor="@color/font_gray_deep"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_center_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/user_center_id_word"
+        android:layout_toRightOf="@id/user_center_id_word"
+        android:textColor="@color/font_gray_deep"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue_light"
+    android:paddingBottom="50dp"
+    tools:context="com.ddm.live.activities.UserCenterFragment">
+
+    <FrameLayout
+        android:id="@+id/user_center_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/user_setting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_center_top"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_setting"
+        android:textColor="@color/font_gray_deep" />
+
+    <RelativeLayout
+        android:id="@+id/user_setting_disturb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_setting_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/user_disturb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/user_disturb"
+            android:textColor="@color/font_gray_deep"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/user_disturb_layout"
+            android:layout_width="55dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_setting_disturb"
+        android:background="@color/white"
+        android:contentDescription="@string/user_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@mipmap/user_line" />
+
+    <RelativeLayout
+        android:id="@+id/user_setting_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_line1"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/user_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/user_remind"
+            android:textColor="@color/font_gray_deep"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/user_remind_layout"
+            android:layout_width="55dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/user_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_setting_remind"
+        android:background="@color/white"
+        android:contentDescription="@string/user_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@mipmap/user_line" />
+
+    <TextView
+        android:id="@+id/user_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/user_line2"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/user_cache"
+        android:textColor="@color/font_gray_deep"
+        android:textSize="14sp" />
+</RelativeLayout>

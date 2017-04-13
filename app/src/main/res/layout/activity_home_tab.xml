@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background_blue_deep"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/home_page_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/background_blue_dark"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/home_title_user_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/home_page_user_img"
+            android:src="@mipmap/home_user"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/home_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/home_page_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/home_title_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/home_page_search_img"
+            android:src="@mipmap/home_search_icon"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_page_title_layout" />
+
+    <!--备份-->
+    <!--<com.flyco.tablayout.CommonTabLayout-->
+    <!--android:id="@+id/tl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="75dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@mipmap/home_tab_bar"-->
+    <!--android:paddingTop="12dp"-->
+    <!--tl:tl_iconHeight="58dp"-->
+    <!--tl:tl_iconWidth="58dp"-->
+    <!--tl:tl_indicator_bounce_enable="false"-->
+    <!--tl:tl_indicator_gravity="BOTTOM"-->
+    <!--tl:tl_textSelectColor="#2C97DE"-->
+    <!--tl:tl_textUnselectColor="#2C97DE"-->
+    <!--tl:tl_textsize="14sp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="48dp"
+        android:gravity="center"
+        android:text="精选"
+        android:textColor="@color/font_blue_list_word"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="47dp"
+        android:gravity="center"
+        android:text="我的"
+        android:textColor="@color/font_blue_list_word"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/home_tab_bar"
+        tl:tl_iconHeight="77dp"
+        tl:tl_iconWidth="77dp"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="#00000000" />
+    <!--</LinearLayout>-->
+</RelativeLayout>

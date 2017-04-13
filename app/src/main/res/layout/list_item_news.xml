@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:background="@color/background_blue_light"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:id="@+id/video_bg_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/video_img_news"
+            android:layout_width="match_parent"
+            android:layout_height="187dip"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/video_status_news"
+            android:layout_width="74dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/corner_bg_organge"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/weather_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/city_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/weather_news"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/temperature_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/weather_news"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_content_news"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:bottomLeftRadius="90dp"
+        android:bottomRightRadius="90dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/user_img_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/user1" />
+
+        <TextView
+            android:id="@+id/introduction_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/user_img_news"
+            android:textColor="@color/font_gray_deep"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_name_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/introduction_news"
+            android:layout_below="@id/introduction_news"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/font_gray_light"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/local_tag_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/user_name_news"
+            android:layout_below="@id/user_name_news"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/dingwei_white" />
+
+        <TextView
+            android:id="@+id/location_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/local_tag_new"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/local_tag_new"
+            android:textColor="@color/font_gray_light"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/point_num_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/font_orange"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/point_num_tag_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/point_num_news"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/point_num_news"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/lb_dianzan_orange" />
+
+        <TextView
+            android:id="@+id/total_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/point_num_news"
+            android:layout_below="@id/point_num_news"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/font_orange"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/total_tag_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_news"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/total_news"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@mipmap/guankan_orange" />
+
+        <TextView
+            android:id="@+id/audience_txt_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/total_news"
+            android:layout_below="@id/total_news"
+            android:layout_marginTop="4dp"
+            android:text="@string/audience_num_txt"
+            android:textColor="@color/font_orange"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/audience_num_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/audience_txt_new"
+            android:layout_below="@id/total_news"
+            android:layout_toLeftOf="@id/audience_txt_new"
+            android:textColor="@color/font_orange"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>

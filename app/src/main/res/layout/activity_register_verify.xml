@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/sl_center"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verify_llt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="验证码已发送至"/>
+                    <TextView
+                        android:id="@+id/phone_num_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:textColor="#954DFE"
+                        tools:text="136 4838 5521"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sms_login_rl_input_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_below="@id/verify_llt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <EditText
+                            android:id="@+id/register_captcha"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edit_text_fram_selector"
+                            android:drawablePadding="13.6dp"
+                            android:hint="@string/pre_hint_captcha"
+                            android:inputType="phone"
+                            android:paddingLeft="18.1dp"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/send_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/verify_llt"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@drawable/send_code_btn"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/regist_btn_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_btn_background_selector"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/title_bar_bg">
+        <ImageView
+            android:id="@+id/return_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/user_home_page_title"
+            android:scaleType="center"
+            android:src="@mipmap/xz_back_black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="手机号登录"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_bar_line_bg"></View>
+    </RelativeLayout>
+</RelativeLayout>
+
+

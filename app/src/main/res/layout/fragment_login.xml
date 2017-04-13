@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ddm.live.activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_ways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:orientation="horizontal"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/login_weibo_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/pre_content"
+            android:src="@mipmap/pre_login_weibo" />
+
+        <ImageView
+            android:id="@+id/login_qq_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/pre_content"
+            android:src="@mipmap/pre_login_qq" />
+
+        <ImageView
+            android:id="@+id/login_chat_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/pre_content"
+            android:src="@mipmap/pre_login_chat" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_ways"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/pre_logs_way"
+        android:textColor="@color/font_gray_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/login_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/pre_explain"
+        android:textColor="@color/font_gray_light"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/login_word"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="35dp"
+        android:background="@mipmap/pre_edit_bg"
+        android:drawableLeft="@mipmap/pre_phone_tag"
+        android:drawablePadding="8dp"
+        android:hint="@string/pre_hint_phoneNum"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/login_captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/login_phone"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/pre_edit_bg"
+        android:drawableLeft="@mipmap/pre_captcha_tag"
+        android:drawablePadding="8dp"
+        android:hint="@string/pre_hint_captcha"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/login_captcha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@mipmap/pre_login_log"
+        android:gravity="center"
+        android:text="@string/pre_log_word"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

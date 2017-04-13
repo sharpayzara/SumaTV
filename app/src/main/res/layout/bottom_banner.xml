@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_bottom_banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/bottom_play_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/home_great_icon"
+        android:gravity="center"
+        android:text="@string/bottom_gkzb"
+        android:textColor="@color/font_gray_light"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/bottom_live_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/home_liveicon"
+        android:gravity="center"
+        android:text="@string/bottom_wlzb"
+        android:textColor="@color/font_gray_light"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/bottom_user_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@mipmap/home_blue_user_icon"
+        android:gravity="center"
+        android:text="@string/bottom_grzx"
+        android:textColor="@color/font_gray_light"
+        android:textSize="10sp" />
+
+</LinearLayout>

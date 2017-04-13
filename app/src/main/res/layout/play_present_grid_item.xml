@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="87dp"
+    android:layout_height="87dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:background="@color/trans">
+
+    <ImageView
+        android:id="@+id/play_gift_checked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/shap_gift_select"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/play_gift_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@color/edit_text_fram_focus"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/play_gift_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="5dp"
+            android:text="200"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/play_gift_exp_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="+"
+                android:textColor="@color/play_gift_font_gray"
+                android:textSize="9.5sp" />
+
+            <TextView
+                android:id="@+id/play_gift_experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:textColor="@color/play_gift_font_gray"
+                android:textSize="9.5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:text="经验值"
+                android:textColor="@color/play_gift_font_gray"
+                android:textSize="9.5sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+    }
+}
+
+
+apply plugin: 'com.neenbedankt.android-apt' // 注释处理
+
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'cicai'
+            keyPassword '123456'
+            storeFile file('/disk/MyFile/cicailottery.keystore')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.ddm.live"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 106
+        versionName "1.0.6"
+        multiDexEnabled true
+        //同时继承Bugly SDK和NDK
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+        //......
+        // 以下是高斯模糊相关的API
+//        renderscriptTargetApi 16
+//        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.qiniu:happy-dns:0.2.+'
+    compile 'com.qiniu.pili:pili-android-qos:0.8.+'
+    compile 'com.qiniu:qiniu-android-sdk:7.2.3'
+    //    compile files('libs/ijkmediaplayer.jar')
+    // 七牛播放器
+    compile files('libs/pldroid-player-1.4.0.jar')
+    // 七牛播放器
+    compile files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    //异步加载图片
+    //    compile project(':pullToRefreshlibrary')
+    //retrofit
+    compile 'com.google.code.gson:gson:2.5'
+    //    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    //    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    //    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    //    compili 'com.squareup.retrofit:converter-jackson'
+    //rxjava
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //butterknife
+    //    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //注解
+    provided 'javax.annotation:jsr250-api:1.0'
+    // dagger
+    compile 'com.google.dagger:dagger:2.0.2'
+    compile 'com.google.dagger:dagger-compiler:2.0.2'
+    compile 'com.marshalchen.ultimaterecyclerview:library:0.3.11'
+    //tab
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
+    //测试框架
+    //    testCompile 'junit:junit:4.12'
+    //    testCompile 'org.assertj:assertj-core:1.7.0'
+    //    testCompile 'org.robolectric:robolectric:3.0'
+    compile files('libs/umeng_social_sdk.jar')
+    compile files('libs/SocialSDK_WeiXin_1.jar')
+    compile files('libs/SocialSDK_WeiXin_2.jar')
+    //    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //推流sdk
+    compile files('pldroid-media-streaming-2.0.4.jar')
+    compile files('libs/Rong_IMLib_v2_7_3.jar')
+    compile files('libs/httpmime-4.1.3.jar')
+    //友盟统计
+    //    compile 'com.umeng.analytics:analytics:latest.integration'
+    //    compile files('libs/umeng-update-v2.6.0.1.jar')
+    compile 'cn.pedant.sweetalert:library:1.3'
+    //圆角
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    //模糊
+    //        compile 'jp.wasabeef:blurry:1.0.5'
+    compile project(':PushSDK')
+    //compile project(':magicfilter')
+    //SDK打包时注释掉
+    compile 'me.yifeiyuan.periscopelayout:library:1.0.0'
+    //集成Bugly SDK
+    compile 'com.tencent.bugly:crashreport:2.1.5'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    compile 'com.tencent.bugly:nativecrashreport:2.2.0'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    compile 'com.linsea:opendanmaku:1.0.0@aar'
+    //弹幕库
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.wang.avi:library:2.1.3'
+    //加载圈
+    //    compile 'com.nineoldandroids:library:2.4.0'
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    //    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.airbnb.android:lottie:1.0.1'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+}

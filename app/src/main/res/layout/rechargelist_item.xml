@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:id="@+id/recharge_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="购买:6元"
+        android:textSize="16.3sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/recharge_time"
+        android:layout_below="@+id/recharge_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="2016-09-18 14:24:02"
+        />
+    <TextView
+        android:id="@+id/recharge_lebi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:textSize="16.3sp"
+        android:textColor="@color/font_orange"
+        android:text="+60乐币"
+        android:gravity="center"
+        />
+</RelativeLayout>

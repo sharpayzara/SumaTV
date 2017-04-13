@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <!--SDK打包时打开home_return_text-->
+        <!--
+           <ImageView
+               android:id="@+id/home_return_text"
+               android:layout_width="64dp"
+               android:layout_height="64dp"
+               android:contentDescription="@string/user_home_page_title"
+               android:scaleType="center"
+               android:src="@mipmap/blue_manage_back" />
+           -->
+        <ImageView
+            android:id="@+id/home_search"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/user_home_page_title"
+            android:scaleType="center"
+            android:src="@drawable/xz_home_search_btn" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/live_list_sliding"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            tl:tl_indicator_color="@color/xz_font_purple"
+            tl:tl_tab_padding="0dp"
+            tl:tl_tab_width="70dp"
+            tl:tl_textSelectColor="@color/xz_font_purple"
+            tl:tl_textUnselectColor="@color/xz_font_black"
+            tl:tl_textsize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:src="@color/xz_line_gray" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/live_list_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

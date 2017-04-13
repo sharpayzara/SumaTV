@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_user_center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp">
+
+        <TextView
+            android:id="@+id/center_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="当前星光"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/current_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:text="100"
+            android:textColor="@color/user_center_main_color"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/current_star_to_diamond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="1000"
+            android:textColor="@color/user_center_main_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18.5dp"
+            android:text="可兑换钻石(个)"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.7"
+        android:src="@color/xz_line_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

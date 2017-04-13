@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/user_content"
+        android:src="@mipmap/user_unlogin_bg" />
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/user_img_bg"
+        android:contentDescription="@string/user_content"
+        android:src="@mipmap/user_unlogin_img" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_unlogin_name"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/user_login_btn"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/user_content"
+        android:src="@mipmap/user_login_btn" />
+</RelativeLayout>

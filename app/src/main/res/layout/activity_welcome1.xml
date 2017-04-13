@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddm.live.activities.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/welcom_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/welcome2"
+        android:contentDescription="@string/welcom_description"
+        android:scaleType="centerCrop" />
+
+    <!--<RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butter_welcome_border">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="1"
+            android:text="遇见，你在乎的人"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+    </RelativeLayout>-->
+
+
+</RelativeLayout>

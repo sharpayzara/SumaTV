@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_live_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/user_home_page_video_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:bottomLeftRadius="90dp"
+        android:bottomRightRadius="90dp"
+        android:paddingLeft="14dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_home_page_user_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/user1"
+            app:civ_border_color="#9c9c9c"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/user_home_page_video_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/user_home_page_user_img"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/user_home_page_user_img"
+            android:text="user_home_page_video_user"
+            android:textColor="@color/font_blue_manage_word"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/user_home_page_video_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/user_home_page_video_user"
+            android:layout_below="@id/user_home_page_video_user"
+            android:layout_toRightOf="@id/user_home_page_user_img"
+            android:text="user_home_page_video_date"
+            android:textColor="@color/font_blue_manage_word"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/user_home_page_video_deleted_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/blue_manage_deleta_btn" />
+
+        <ImageView
+            android:id="@+id/user_home_page_video_share_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/user_home_page_video_deleted_btn"
+            android:src="@drawable/blue_manage_share_btn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_home_page_video_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_home_page_video_img"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/user_home_page_video_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/user_home_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:text="标题内容"
+            android:textColor="@color/le_font_black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/user_home_video_more_btn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/user_home_video_more_btn_img" />
+        <!--android:src="@mipmap/user_home_video_list_share_btn"-->
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</LinearLayout>

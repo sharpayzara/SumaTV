@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="com.ddm.live.activities.FansContributionListActivity">
+
+    <RelativeLayout
+        android:id="@+id/_fans_contribution_list_top_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/font_white_light">
+
+        <ImageView
+            android:id="@+id/user_contribution_title_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/user_home_page_title"
+            android:scaleType="center"
+            android:src="@mipmap/xz_back_black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="星光贡献榜"
+            android:textColor="@color/xz_font_black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/_fans_contribution_list_top_pannel"
+        android:src="@color/xz_line_gray" />
+
+    <LinearLayout
+        android:id="@+id/fans_contribution_total_diamonds"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/_fans_contribution_list_top_pannel"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@mipmap/xz_starshine_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="钻石数额"
+            android:textColor="@color/diamond_number"
+            android:textSize="14.9sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/total_diamonds_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/xz_font_black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fans_contribution_total_diamonds"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@color/xz_line_gray" />
+
+    <ListView
+        android:id="@+id/fans_contribution_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fans_contribution_total_diamonds"
+        android:layout_marginTop="9.6dp"
+        android:divider="#00000000" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_blue_light"
+    android:paddingBottom="80dp">
+
+    <FrameLayout
+        android:id="@+id/mylayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/pre_live_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/pre_bg_white"
+        android:drawableLeft="@mipmap/tianqi_orange"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:hint="@string/pre_editor_title"
+        android:padding="10dp"
+        android:textColor="@color/font_orange"
+        android:textColorHint="@color/font_gray_light"
+        android:textCursorDrawable="@drawable/editor_cursor_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pre_live_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/pre_live_subject"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/pre_bg_white"
+        android:drawableLeft="@mipmap/dingwei_orange"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/font_orange"
+        android:textSize="14sp" />
+
+    <!--<TextView
+        android:id="@+id/pre_live_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/pre_live_location"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/pre_bg_white"
+        android:drawableLeft="@mipmap/tianqi_orange"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@color/font_orange"
+        android:textSize="12sp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/pre_live_btn_layout"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/pre_live_light"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pre_live_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/pre_live_deep"
+            android:gravity="center"
+            android:text="@string/pre_ready_live"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content">
+
+    <!--    <com.ddm.live.animation.CustomRoundView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_headpic"
+            app:border_color="@color/colorPrimary"
+            app:border_width="1dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/user_focus_list_img_layout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/crvheadimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/bf_user_head_img"
+            android:src="@mipmap/user1"
+            app:civ_border_color="#9c9c9c"
+            app:civ_border_width="1dp" />
+
+        <ImageView
+            android:id="@+id/user_head_list_user_level_tag"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/resource_v_101" />
+    </RelativeLayout>
+</LinearLayout>

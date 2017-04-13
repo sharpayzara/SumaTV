@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/le_user_fans_list_title_background">
+
+    <ImageView
+        android:id="@+id/recharge_record_return_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:contentDescription="@string/home_page_user_img"
+        android:scaleType="center"
+        android:src="@mipmap/blue_manage_back" />
+
+    <TextView
+        android:id="@+id/recharge_record_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/transparent"
+        android:text="购买记录"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
